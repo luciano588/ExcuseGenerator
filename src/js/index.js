@@ -6,5 +6,15 @@ import "../assets/img/4geeks.ico";
 import "../style/index.scss";
 
 window.onload = function() {
-  console.log("Hello Rigo from the console!");
+  let pro = ["a", "the"];
+  let sub = ["racoon", "dog"];
+  let act = ["stole my", "ate my"];
+  let pos = ["car", "tongue"];
+
+  let randompro = pro[Math.floor(Math.random() * pro.length)];
+  let randomsub = sub[Math.floor(Math.random() * sub.length)];
+  let randomact = act[Math.floor(Math.random() * act.length)];
+  let randompos = pos[Math.floor(Math.random() * pos.length)];
+  document.querySelector("#theExcuse").innerHTML =
+    randompro + " " + randomsub + " " + randomact + " " + randompos;
 };
